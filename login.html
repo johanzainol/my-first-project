@@ -1,1 +1,96 @@
-<h1> Website ini berkenaan ABMS ISO</h1>
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #2980b9, #6dd5fa);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+      width: 350px;
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #2980b9;
+    }
+    .login-container label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-container .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .login-container .remember input {
+      margin-right: 0.5rem;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 0.7rem;
+      background: #2980b9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .login-container button:hover {
+      background: #2573a6;
+    }
+    .login-container .forgot {
+      display: block;
+      text-align: right;
+      margin-top: 0.5rem;
+      color: #2980b9;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .login-container .forgot:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Log Masuk</h2>
+    <form>
+      <label for="email">Emel atau Nama Pengguna</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="password">Katalaluan</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="remember">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Ingatkan Saya</label>
+      </div>
+
+      <button type="submit">Log Masuk</button>
+      <a href="#" class="forgot">Lupa Katalaluan?</a>
+    </form>
+  </div>
+</body>
+</html>
